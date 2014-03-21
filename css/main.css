@@ -35,6 +35,10 @@ background: #17aa56;
 color: #fff;
 border-radius: 7px;
 box-shadow: 0 5px #119e4d;}
+section.fiber {background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCBW_4AnwMvF4aZK2V8BYp93E3x8mK2YjYmeBMyPvNuTbIN4Xj); background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;}
 
 
 li {list-style:none;}
