@@ -1,1 +1,6 @@
-h1{color:#0971B2;margin:0 auto}
+body {text-align:center; font-family: 'Lato', sans-serif; font-size:150%; line-height:1.5;}
+h1{font-size:6em;}
+li {list-style:none;}
+aside {position:fixed; top:0; right:0; background:#eee;}
+aside ul {padding:20%; height:100%;}
+aside li {margin:10%; margin-bottom:50%; padding-right:50px; text-align:center;}
