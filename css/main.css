@@ -1,5 +1,42 @@
-body {text-align:center; font-family: 'Lato', sans-serif; font-size:150%; line-height:1.5;}
+body {text-align:center; font-family: 'Lato', sans-serif; font-size:150%; line-height:1.5; color:#fff;}
 h1{font-size:6em;}
+.intro {background-image: url(http://images.raleighskyline.com/images/2012/durhams-suntrust-tower-moved-to-raleigh/hill_building_move_april_1_2012_raleighskyline.com_01.jpg); background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;}
+section.intro {position:absolute; top:0; bottom:0; width:100%;}
+.intro h1 {position:absolute; bottom:10%; text-align:center;}
+.bottom {position:absolute; bottom:0; right:20%; text-align:center;}
+.button {border: none;
+font-family: inherit;
+font-size: inherit;
+color: inherit;
+background: none;
+cursor: pointer;
+padding: 15px 35px;
+display: inline-block;
+margin: 15px 30px;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: 700;
+outline: none;
+position: relative;
+-webkit-transition: all 0.3s;
+-moz-transition: all 0.3s;
+transition: all 0.3s;
+background: #cb4e4e;
+color: #fff;
+box-shadow: 0 6px #ab3c3c;
+-webkit-transition: none;
+-moz-transition: none;
+transition: none;
+border-radius: 0 0 5px 5px;
+background: #17aa56;
+color: #fff;
+border-radius: 7px;
+box-shadow: 0 5px #119e4d;}
+
+
 li {list-style:none;}
 aside {position:fixed; top:0; right:0; background:#eee;}
 aside ul {padding:20%; height:100%;}
