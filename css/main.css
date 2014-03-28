@@ -1,12 +1,6 @@
+html, body {height:100%;}
 body {text-align:center; font-family: 'Lato', sans-serif; font-size:150%; line-height:1.5; color:#fff;}
-h1{font-size:6em;}
-.intro {background-image: url(http://images.raleighskyline.com/images/2012/durhams-suntrust-tower-moved-to-raleigh/hill_building_move_april_1_2012_raleighskyline.com_01.jpg); background-position: center center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;}
-section.intro {position:absolute; top:0; bottom:0; width:100%;}
-.intro h1 {position:absolute; bottom:10%; text-align:center;}
-.bottom {position:absolute; bottom:0; right:20%; text-align:center;}
+h1{font-size:5em;}
 .button {border: none;
 font-family: inherit;
 font-size: inherit;
@@ -35,13 +29,20 @@ background: #17aa56;
 color: #fff;
 border-radius: 7px;
 box-shadow: 0 5px #119e4d;}
-section.fiber {background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCBW_4AnwMvF4aZK2V8BYp93E3x8mK2YjYmeBMyPvNuTbIN4Xj); background-position: center center;
-background-repeat: no-repeat;
-background-attachment: fixed;
-background-size: cover;}
 
 
 li {list-style:none;}
 aside {position:fixed; top:0; right:0; background:#eee;}
 aside ul {padding:20%; height:100%;}
 aside li {margin:10%; margin-bottom:50%; padding-right:50px; text-align:center;}
+
+
+
+
+/*new*/
+article {margin:0 auto; width:100%; max-width:1920px; position:relative; min-height:100%; text-shadow:0 0 10px rgba(0,0,0,0.7); background-position:50% 0; background-repeat:repeat; background-attachment:fixed; background-size: cover;}
+.intro {background-image: url(http://images.raleighskyline.com/images/2012/durhams-suntrust-tower-moved-to-raleigh/hill_building_move_april_1_2012_raleighskyline.com_01.jpg);}
+.bottom {position:absolute; bottom:5%; right:20%;}
+
+.fiber {background: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRCBW_4AnwMvF4aZK2V8BYp93E3x8mK2YjYmeBMyPvNuTbIN4Xj);}
+article section {width:70%; text-align:center; margin:0 auto; padding:20% 0 0;}

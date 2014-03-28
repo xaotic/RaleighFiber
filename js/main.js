@@ -1,23 +1,8 @@
-( function( $ ) {
-    // Init Skrollr
-    var s = skrollr.init({
-        render: function(data) {
-            //Debugging - Log the current scroll position.
-            //console.log(data.curTop);
-        }
-    });
-} )( jQuery );
-
-$(document).ready(function(){
-resizeDiv();
+$('article').each(function(){
+  var $obj = $(this);
+  $(window).scroll(function() {
+    var yPos = -($(window).scrollTop() / $obj.data('speed'));
+    var bgpos = '50% '+ yPos + 'px';
+    $obj.css('background-position', bgpos );
+  });
 });
-
-window.onresize = function(event) {
-resizeDiv();
-}
-
-function resizeDiv() {
-vpw = $(window).width();
-vph = $(window).height();
-$('.intro').css({‘height’: vph + ‘px’});
-}
