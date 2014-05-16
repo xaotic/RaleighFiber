@@ -1,6 +1,13 @@
+* {box-sizing:border-box; -moz-box-sizing:border-box; -webkit-box-sizing:border-box;}
 html, body {height:100%;}
-body {text-align:center; font-family: 'Lato', sans-serif; font-size:150%; line-height:1.5; color:#fff;}
-h1{font-size:5em;}
+body {text-align:center; font-family: 'Lato', sans-serif; font-size:100%; line-height:1.5; color:#fff;}
+@media screen and (min-width:40em) {
+	body {font-size:150%;}
+}
+h1{font-size:4em;}
+@media screen and (min-width:40em) {
+	h1{font-size:5em;}
+}
 .button {border: none;
 font-family: inherit;
 font-size: inherit;
@@ -37,12 +44,16 @@ aside ul {padding:20%; height:100%;}
 aside li {margin:10%; margin-bottom:50%; padding-right:50px; text-align:center;}
 
 
-
-
 /*new*/
 article {margin:0 auto; width:100%; max-width:1920px; position:relative; min-height:100%; text-shadow:0 0 10px rgba(0,0,0,0.7); background-position:50% 0; background-repeat:repeat; background-attachment:fixed; background-size: cover;}
 .intro {background-image: url(http://images.raleighskyline.com/images/2012/durhams-suntrust-tower-moved-to-raleigh/hill_building_move_april_1_2012_raleighskyline.com_01.jpg);}
-.bottom {position:absolute; bottom:5%; right:20%;}
+.bottom {width:75%; margin:0 auto;}
+@media screen and (min-width:40em) {
+	.bottom {width:auto; margin:0; position:absolute; bottom:5%; right:20%;}
+}
 
 .fiber {background: url(https://www.stanford.edu/group/sml/cgi-bin/images/fiber-optics.jpg);}
-article section {width:70%; text-align:center; margin:0 auto; padding:20% 0 0;}
+article section {width:100%; text-align:center; padding:1%;}
+@media screen and (min-width:40em) {
+	article section {width:70%; margin:0 auto; padding:20% 1% 1%;}
+}
