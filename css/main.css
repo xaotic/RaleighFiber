@@ -35,7 +35,10 @@ border-radius: 0 0 5px 5px;
 background: #17aa56;
 color: #fff;
 border-radius: 7px;
-box-shadow: 0 5px #119e4d;}
+box-shadow:0 5px #119e4d;
+text-decoration:none;}
+.button:hover {box-shadow:0 2px #119e4d; top:2px;}
+.button:active {box-shadow:0; top:5px;}
 
 
 li {list-style:none;}
