@@ -32,7 +32,8 @@ function validateForm()
             }
             processResult().done(function(result) {
                             alert(lat + ", processResult" + lon);
-                            send2Fuse(lat,lon);
+                            send2Fuse(email, lat,lon);
+                            send2GoogleForm(lat,lon);
             }).fail(function() {
                             alert("error");
             });
@@ -41,7 +42,35 @@ function validateForm()
       return false;
     }
 
-    function send2Fuse(lat,lon) {
-        alert(lat + ", infuse " + lon);
+    function send2Fuse(email, lat,lon) {
+        alert(" lat =" + lat+ email + " lon=" + lon);
+        	return $.ajax({
+                    type: "GET",
+                    url: "http://localhost:8080/inbound/query?email="+email+"&lat="+lat+"&lon="+lon,
+                    dataType: "html",
+                    success: function (response) {
+                        for(i in response) {
+                            alert("inside Fuse Response" +response);
+                        }
+                    }
+                });
+
+    }
+
+    function send2GoogleForm(lat,lon) {
+                    $.ajax({
+                        url: "https://docs.google.com/forms/d/1dQUPSmQTpgf4imFbIWBU2U3CjDxjFR4SP9BisPyAlqc",
+                        data: { "entry_427647861": lat, "entry_1907208820": lon },
+                        type: "POST",
+                        dataType: "xml",
+                        statusCode: {
+                            0: function () {
+                                alert("success");
+                            },
+                            200: function () {
+                                alert("success");
+                            }
+                        }
+                    });
 
     }
