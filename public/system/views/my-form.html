@@ -1,0 +1,11 @@
+<form role="form" name="updateForm" class="css-form" ng-submit="send(updateForm)" novalidate>
+	<div class="form-group" ng-repeat="column in fields.fields">
+		<strong ng-show="checkID(column.name)">{{column.name}}</strong><br>
+		<input  ng-show="checkForType('esriFieldTypeString', $index)" type="text" ng-model="updateForm[column.name]"   required/><br />
+		<input ng-show="checkForType('esriFieldTypeDouble', $index)"type="number" ng-model="updateForm[column.name]"  required/><br />
+	</div>
+	<button type="submit" class="btn btn-primary">Submit</button>
+	<pre>Form = {{updateForm | json}}</pre>
+	<pre>NON-JSON = {{updateForm}}</pre>
+</form>
+
